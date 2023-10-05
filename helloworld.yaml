@@ -6,10 +6,3 @@
   - name: Hello World!
     debug:
       msg: "Hi! AAP is Working!"
-  - name: "Read a file content"
-    shell: |
-      cat /etc/redhat-release
-    register: file_content
-  - name: "Print the file content"
-    debug:
-      msg: "{{ file_content }}"
