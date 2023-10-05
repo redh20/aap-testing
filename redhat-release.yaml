@@ -1,0 +1,10 @@
+---
+- name: Get RHEL OS Release
+  tasks:
+  - name: "Read RHEL File Content"
+    shell: |
+      cat /etc/redhat-release
+    register: file_content
+  - name: "Print the file content"
+    debug:
+      msg: "{{ file_content }}"
