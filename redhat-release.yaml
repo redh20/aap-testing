@@ -1,5 +1,7 @@
 ---
 - name: Get RHEL OS Release
+  hosts: all
+
   tasks:
   - name: "Read RHEL File Content"
     shell: |
