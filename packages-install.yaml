@@ -1,0 +1,20 @@
+---
+- name: Package installation
+  dnf:
+    name:
+      - net-tools
+      - tmux
+      - curl
+      - dstat
+      - rsync
+      - nc
+      - chrony
+      - git
+      - setroubleshoot.x86_64
+      - bash-completion.noarch
+      - unzip
+      - tree
+      - open-vm-tools
+      - tuned
+      - vim
+    state: latest
