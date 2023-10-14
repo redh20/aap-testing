@@ -3,8 +3,8 @@
   hosts: all
   
   tasks:
-  - name: Install Sysadmin RPMs
-    dnf:
+  - name: Remove maridb
+    yum:
       name:
         - mariadb
       state: absent
