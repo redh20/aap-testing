@@ -5,5 +5,5 @@
   tasks:
   - name: Remove maridb
     yum:
-      name: mariadb
+      name: "mariadb*"
       state: absent
