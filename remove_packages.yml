@@ -1,0 +1,12 @@
+---
+- name: Package installation
+  hosts: all
+  
+  tasks:
+  - name: Install Sysadmin RPMs
+    dnf:
+      name:
+        - mariadb
+        - apache
+        - httpd
+      state: absent
