@@ -11,5 +11,5 @@
   
   - name: Remove mariadb
     yum:
-      name: MariaDB-server
+      name: MariaDB
       state: absent
