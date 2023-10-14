@@ -8,6 +8,7 @@
     service:
       name: mariadb
       state: stopped
+    ignore_errors: True
   
   - name: Remove mariadb
     yum:
