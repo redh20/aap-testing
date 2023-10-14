@@ -1,6 +1,7 @@
 ---
 - name: Package installation
   hosts: all
+  ignore_errors: True
   
   tasks:
 
@@ -8,8 +9,7 @@
     service:
       name: mariadb
       state: stopped
-    ignore_errors: True
-  
+      
   - name: Remove mariadb
     yum:
       name: 
