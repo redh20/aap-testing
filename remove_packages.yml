@@ -20,5 +20,5 @@
   - name: Remove mariadb
     yum:
       name: 
-        - 'MariaDB*'
+        - 'mariaDB*'
       state: absent
