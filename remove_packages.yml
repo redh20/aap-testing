@@ -13,8 +13,9 @@
   - name: Remove mariadb
     yum:
       name: 
-        - "MariaDB-*"
-        - "MariaDB-c*"
+        - MariaDB
+  #      - "MariaDB-*"
+  #      - "MariaDB-c*"
   #      - MariaDB-server
   #      - MariaDB-client
       state: absent
